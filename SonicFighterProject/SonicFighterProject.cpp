@@ -1,12 +1,31 @@
 // SonicFighterProject.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
+#include <SFML/Graphics.hpp>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    // Create a window
+    sf::RenderWindow window(sf::VideoMode(800, 600), "Sonic Sprite Fighter");
+
+    // Game loop
+    while (window.isOpen())
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                window.close();
+        }
+
+        window.clear(sf::Color::Black); // Clear the screen
+        // Draw things here (e.g., sprites)
+        window.display(); // Display the frame
+    }
+
+    return 0;
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
