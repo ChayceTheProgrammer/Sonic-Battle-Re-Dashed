@@ -12,3 +12,14 @@ ProjectDash/ProjectDash.sln
 ProjectDash/ProjectDash.vcxproj
 ProjectDash/ProjectDash.vcxproj.filters
 ProjectDash/ProjectDash.vcxproj.user
+
+/build/
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+*.log
+*.suo
+*.user
+*.VC.db
