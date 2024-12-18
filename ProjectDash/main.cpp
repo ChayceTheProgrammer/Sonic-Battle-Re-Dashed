@@ -1,13 +1,23 @@
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(800, 800), "Testing Window for Project Dash!");
     sf::CircleShape shape(100.f);
+
+    sf::Texture texture1;
+    if (!texture1.loadFromFile("assets/CharacterSpriteSheets/SonicSpriteSheet.png")) {
+        return EXIT_FAILURE;
+    }
+    sf::Sprite sprite(texture1);
+
+
     shape.setFillColor(sf::Color::Green);
 
     while (window.isOpen())
     {
+        //Process Events
         sf::Event event;
         while (window.pollEvent(event))
         {
@@ -16,7 +26,10 @@ int main()
         }
 
         window.clear();
-        window.draw(shape);
+        //window.draw(shape);
+
+        window.draw(sprite);
+
         window.display();
     }
 
