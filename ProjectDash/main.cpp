@@ -5,13 +5,13 @@ int main()
 {
     sf::RenderWindow window(sf::VideoMode(800, 800), "Testing Window for Project Dash!");
     sf::CircleShape shape(100.f);
-
     sf::Texture texture1;
-    if (!texture1.loadFromFile("assets/CharacterSpriteSheets/SonicSpriteSheet.png")) {
+
+    //load image->for now just shadow sprites
+    if (!texture1.loadFromFile("assets/CharacterSpriteSheets/handmadeShadow.png")) {
         return EXIT_FAILURE;
     }
     sf::Sprite sprite(texture1);
-
 
     shape.setFillColor(sf::Color::Green);
 
