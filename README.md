@@ -9,7 +9,6 @@ Vertical Slice:
 		a) read input from the user (Keyboard initial priority, then FightStick, then gamepad...)
 		b) show effect of input in game (moving image within window etc.)
 		c)
-	
 	2) Use Box2D for hitboxes
 	
 	3) Sprite Management - manage with libraries like STB Image or SFML built-in's
