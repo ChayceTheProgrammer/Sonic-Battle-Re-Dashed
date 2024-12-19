@@ -1,8 +1,10 @@
 # SonicSpriterZ
- DBFZ Inspired Fighting Game with Sprite of GameBoy Advance Sonic Characters
+Project Dash: Sonic Sprite Fighter (PC first then Port to Vita via VitaSDK)
+DBFZ Inspired Fighting Game with Sprite of GameBoy Advance Sonic Characters 
+with sprites from the following games
+Base: Sonic Battle and Sonic Advance 1,2,3
+(Future - Episode BlackDoomX: Megaman X Series, Megaman Series, Sonic 1,2,3,CD)
 
-Basic Routine of Development
-Sonic Sprite Fighter (PC first then Port to Vita via VitaSDK)
 Vertical Slice:
 	1) Gather Libraries and Set up MSVS Project:
 	 	a) SFML: Simple and Fast Multimedia Libary handles graphics, input, and audio
