@@ -5,28 +5,29 @@ with sprites from the following games
 Base: Sonic Battle and Sonic Advance 1,2,3
 (Future - Episode BlackDoomX: Megaman X Series, Megaman Series, Sonic 1,2,3,CD)
 
-Vertical Slice:
-	1) Gather Libraries and Set up MSVS Project:
-	 	a) SFML: Simple and Fast Multimedia Libary handles graphics, input, and audio
-		b) SDL2: Simple DirectMedia Layer - handles creation, rendering, and input
+Vertical Slice
+1) Gather Libraries and Set up MSVS Project:
+	- SFML: Simple and Fast Multimedia Libary handles graphics, input, and audio
+	- SDL2: Simple DirectMedia Layer - handles creation, rendering, and input
 
-	2) Visuals and Gameplay
-		a) read input from the user (Keyboard initial priority, then FightStick, then gamepad...)
-		b) show effect of input in game (moving image within window etc.)
-		
-	2) Use Box2D for hitboxes and hurtboxes
-		a) hitboxes must match dimensions of character sprites (sketch on iPad)
-		b) low hitboxes will need to be made
-		c)
+2) Visuals and Gameplay
+	- Read input from the user (Keyboard initial priority, then FightStick, then gamepad...)
+	- Show effect of input in game (moving image within window etc.)
 	
-	3) Sprite Management - manage with libraries like STB Image or SFML built-in's
-		a) went with SFML -> Statically Linked so must add Licence for library software
-	
-	4) State Management for movement - Use Finite State Machines for movement, attacks, hit-detection and specials and supers???
+2) Use Box2D for hitboxes and hurtboxes
+	- Hitboxes must match dimensions of character sprites (sketch on iPad)
+	- Low hitboxes will need to be made (take from x4-x8 and Procreate for Sonic Characters or find 'look-down' animations/sheets)
+
+3) Sprite Management - manage with libraries like STB Image or SFML built-in's
+	- Went with SFML -> Statically Linked so must add Licence for library software
+
+4) State Management for movement
+	- Use Finite State Machines for movement, attacks, hit-detection and specials and supers???
 
 Environment:
 -Tools: SFML/SDL2 (Libraries, Compiler, IDE)
--Project and Link to graphics library
+-MSVS Empty Project and Link to graphics library
+-create c++ file
 -get a window and go...
 
 Input Architecture System
