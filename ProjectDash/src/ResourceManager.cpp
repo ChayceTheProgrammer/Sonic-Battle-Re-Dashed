@@ -1,3 +1,7 @@
+// ResourceManager.h
+#ifndef RESOURCEMANAGER_H
+#define RESOURCEMANAGER_H
+
 #include <SFML/Graphics.hpp>
 #include <map>
 #include <memory>
@@ -43,3 +47,5 @@ private:
 
     std::map<std::string, std::shared_ptr<sf::Texture>> textures;
 };
+
+#endif // RESOURCEMANAGER_H
